@@ -9,15 +9,17 @@ public class Task1 {
         int[] arr = new int[n];
 
         int max = 0;
+        int ans = 0;
         for (int i = 0; i < n; i++) {
             arr[i] = rand.nextInt();
             if (Math.abs(arr[i]) > max) {
-                max = arr[i];
+                max = Math.abs(arr[i]);
+                ans = arr[i];
             }
         }
 
         System.out.println("Массив:");
         System.out.println(Arrays.toString(arr));
-        System.out.println("Максимальное по модулю значение: " + max);
+        System.out.println("Максимальное по модулю значение: " + ans);
     }
 }
