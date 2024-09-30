@@ -57,7 +57,7 @@ public class Task3 {
     }
 
     public void solve() {
-        ArrayList<Employee> employees = new ArrayList<Employee>();
+        ArrayList<Employee> employees = new ArrayList<>();
 
         employees.add(new Employee("Иванов Петр Сергеевич",
                 31, "Отдел разработки ПО", 100000.0));
